@@ -1,18 +1,12 @@
 import Swal from "sweetalert2";
 import { useContext, useState } from "react";
-// import {
-//   loadCaptchaEnginge,
-//   LoadCanvasTemplate,
-//   validateCaptcha,
-// } from "react-simple-captcha";
-// import { AuthContext } from '../../Providers/AuthProvider';
+
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
-// import SocialLogin from "../../Components/SocialLogin/SocialLogin";
+import SocialLogin from "../../Components/SocialLogin/SocialLogin";
 
 const Login = () => {
-  //   const [disabled, setDisabled] = useState(true);
   const { signIn } = useContext(AuthContext);
   const navigate = useNavigate();
   const location = useLocation();
@@ -60,7 +54,7 @@ const Login = () => {
   return (
     <div>
       <Helmet>
-        <title>Survey Scribe | log in</title>
+        <title>Task Craft | log in</title>
       </Helmet>
       <div className="my-12 lg:my-16 ">
         <div className=" ">
@@ -107,7 +101,7 @@ const Login = () => {
                 />
               </div>
             </form>
-            {/* <SocialLogin></SocialLogin> */}
+            <SocialLogin></SocialLogin>
             <p className="pb-4 pl-3 md:pl-8">
               <>
                 New Here?{" "}
