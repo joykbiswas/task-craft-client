@@ -57,9 +57,10 @@ const Navbar = () => {
                       </NavLink>
                     </li>
 
+              
                     <li>
                       <NavLink
-                        to="/add_job"
+                        to="/blog"
                         className={({ isActive, isPending }) =>
                           isPending
                             ? "pending"
@@ -68,12 +69,12 @@ const Navbar = () => {
                             : "text-xl"
                         }
                       >
-                        Add Job
+                        Blog Page
                       </NavLink>
                     </li>
                     <li>
                       <NavLink
-                        to="/myPosted_jobs"
+                        to="/dashboard"
                         className={({ isActive, isPending }) =>
                           isPending
                             ? "pending"
@@ -82,12 +83,12 @@ const Navbar = () => {
                             : "text-xl"
                         }
                       >
-                        My Posted Jobs
+                        Dashboard
                       </NavLink>
                     </li>
                     <li>
                       <NavLink
-                        to="/my_bids"
+                        to="/pricing"
                         className={({ isActive, isPending }) =>
                           isPending
                             ? "pending"
@@ -96,21 +97,7 @@ const Navbar = () => {
                             : "text-xl"
                         }
                       >
-                        My Bids
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink
-                        to="/bid_requests"
-                        className={({ isActive, isPending }) =>
-                          isPending
-                            ? "pending"
-                            : isActive
-                            ? "text-red-500 text-xl underline"
-                            : "text-xl"
-                        }
-                      >
-                        Bid Requests
+                        Pricing Page
                       </NavLink>
                     </li>
                     <li>
@@ -152,9 +139,10 @@ const Navbar = () => {
                   </li>
 
                   {/* ----end----- */}
+                  
                   <li>
                     <NavLink
-                      to="/add_job"
+                      to="/blog"
                       className={({ isActive, isPending }) =>
                         isPending
                           ? "pending"
@@ -163,12 +151,12 @@ const Navbar = () => {
                           : " text-xl "
                       }
                     >
-                      Add Job
+                      Blog Page
                     </NavLink>
                   </li>
                   <li>
                     <NavLink
-                      to="/myPosted_jobs"
+                      to="/dashboard"
                       className={({ isActive, isPending }) =>
                         isPending
                           ? "pending"
@@ -177,12 +165,12 @@ const Navbar = () => {
                           : " text-xl "
                       }
                     >
-                      My Posted Jobs
+                      Dashboard
                     </NavLink>
                   </li>
                   <li>
                     <NavLink
-                      to="/my_bids"
+                      to="/pricing"
                       className={({ isActive, isPending }) =>
                         isPending
                           ? "pending"
@@ -191,21 +179,7 @@ const Navbar = () => {
                           : " text-xl "
                       }
                     >
-                      My Bids
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink
-                      to="/bid_requests"
-                      className={({ isActive, isPending }) =>
-                        isPending
-                          ? "pending"
-                          : isActive
-                          ? "text-red-500 text-xl underline"
-                          : " text-xl "
-                      }
-                    >
-                      Bid Requests
+                      Pricing Page
                     </NavLink>
                   </li>
                 </ul>
