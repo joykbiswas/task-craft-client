@@ -7,7 +7,7 @@ export default function KanbanBoard() {
   const [incomplete, setIncomplete] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/tasks")
+    fetch("https://task-craft-server-six.vercel.app/tasks")
       .then((response) => response.json())
       .then((json) => {
         setCompleted(json.filter((task) => task.completed));

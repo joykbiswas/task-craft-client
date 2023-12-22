@@ -16,7 +16,7 @@ const UpdateTasks = () => {
     const description = form.description.value;
     const updatedTask = { title, date, description, priority };
     console.log(updatedTask);
-    fetch(`http://localhost:5000/tasks/${_id}`,{
+    fetch(`https://task-craft-server-six.vercel.app/tasks/${_id}`,{
         method: 'PUT',
         headers: {
             "content-type": "application/json",

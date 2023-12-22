@@ -60,7 +60,7 @@ const router = createBrowserRouter([
       {
         path: 'project/updateTasks/:id',
         element:<UpdateTasks></UpdateTasks>,
-        loader:({params})=>fetch(`http://localhost:5000/tasks${params.id}`)
+        loader:({params})=>fetch(`https://task-craft-server-six.vercel.app/tasks${params.id}`)
       },
       {
         path: 'kanbanboard',
