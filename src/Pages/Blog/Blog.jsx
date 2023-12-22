@@ -9,7 +9,7 @@ const Blog = () => {
       </div>
 
       {/* blog 1 */}
-      <div>
+      <div className="" data-aos="fade-up">
         <h5 className="text-3xl font-semibold m-3">
         ⏱️Supercharge Your Focus with TaskCraft is Time Management Tools
         </h5>
@@ -45,7 +45,7 @@ const Blog = () => {
       </div>
       {/* blog 2 */}
 
-      <div>
+      <div data-aos="fade-up">
         <h5 className="text-3xl font-bold m-3">
         📧 Mastering Email Efficiency with TaskCraft Integrations
         </h5>
@@ -82,7 +82,7 @@ const Blog = () => {
         </div>
       </div>
       {/* blog 3 */}
-      <div>
+      <div data-aos="fade-up">
         <h5 className="text-3xl pt-6 font-bold m-3">
         🤝 Boosting Teamwork and Communication with TaskCraft is Collaborative Tools
         </h5>

@@ -13,7 +13,9 @@ const Benefit = () => {
         <div className=" md:flex md:justify-between gap-5 space-y-4">
           {/* 1st card */}
 
-          <div className="w-full mt-4 max-w-sm p-4 bg-slate-600  border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+          <div className="w-full mt-4 max-w-sm p-4 bg-slate-600  border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700"
+           data-aos="fade-right"
+          >
             
             <div className=" items-baseline text-white dark:text-white">
               <p className="text-3xl font-extrabold tracking-tight">
@@ -58,7 +60,9 @@ const Benefit = () => {
           </div>
 
           {/* 2nd card */}
-          <div className="w-full max-w-sm p-4 bg-[#5f99fc] border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+          <div className="w-full max-w-sm p-4 bg-[#5f99fc] border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700"
+          data-aos="fade-up"
+          >
             
             <div className=" items-baseline text-white dark:text-white">
              <p className="text-3xl font-extrabold tracking-tight">
@@ -99,7 +103,9 @@ const Benefit = () => {
           </div>
 
           {/* 3rd card */}
-          <div className="w-full max-w-sm p-4 bg-slate-600 border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+          <div className="w-full max-w-sm p-4 bg-slate-600 border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700"
+          data-aos="fade-right"
+          >
             
             <div className=" items-baseline text-white dark:text-white">
               <p className="text-3xl font-extrabold tracking-tight">

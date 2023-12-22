@@ -1,11 +1,12 @@
-import { useNavigate } from "react-router-dom";
+import { useLoaderData, } from "react-router-dom";
 
 import Swal from "sweetalert2";
 
-const CreateTask = () => {
-  const navigate = useNavigate()
+const UpdateTasks = () => {
+    const task = useLoaderData();
+    const {_id, date, description, priority,  title } = task;
 
-  const handleCreateTask = (event) => {
+  const handleUpdatedTasks = (event) => {
     event.preventDefault();
 
     const form = event.target;
@@ -13,14 +14,14 @@ const CreateTask = () => {
     const date = form.date.value;
     const priority = form.priority.value;
     const description = form.description.value;
-    const addTask = { title, date, description, priority };
-    console.log(addTask);
-    fetch('http://localhost:5000/tasks',{
-        method: 'POST',
+    const updatedTask = { title, date, description, priority };
+    console.log(updatedTask);
+    fetch(`http://localhost:5000/tasks/${_id}`,{
+        method: 'PUT',
         headers: {
             "content-type": "application/json",
         },
-        body:JSON.stringify(addTask)  
+        body:JSON.stringify(updatedTask)  
     })
     .then((res) =>res.json())
     .then((data) =>{
@@ -28,19 +29,18 @@ const CreateTask = () => {
         if(data.insertedId){
             Swal.fire({
                 title: "success!",
-                text: "your tasks added successfully",
+                text: "tasks update  successfully",
                 icon: "success",
                 confirmButtonText: "Add Task",
               });
         }
-        navigate('/dashboard/project')
     })
   };
   return (
     <div>
       <div className="bg-[#fbf3de] max-w-full mx-auto  p-24">
-        <h2 className="text-4xl font-bold text-center pb-12">Create Survey</h2>
-        <form onSubmit={handleCreateTask}>
+        <h2 className="text-4xl font-bold text-center pb-12">Update Survey</h2>
+        <form onSubmit={handleUpdatedTasks}>
           {/* form row 1*/}
           <div className="md:flex mb-5">
             <div className="form-control md:w-1/2">
@@ -51,6 +51,7 @@ const CreateTask = () => {
                 <input
                   type="text"
                   name="title"
+                  defaultValue={title}
                   placeholder=" title here"
                   className="input input-bordered w-full "
                   required
@@ -64,6 +65,7 @@ const CreateTask = () => {
               <input
                 type="date"
                 name="date"
+                defaultValue={date}
                 placeholder=" title here"
                 className="input input-bordered w-full "
                 required
@@ -82,6 +84,7 @@ const CreateTask = () => {
                 className="select select-bordered join-item"
                 type="category"
                 name="priority"
+                defaultValue={priority}
               >
                 <option disabled selected>
                   Option
@@ -101,6 +104,7 @@ const CreateTask = () => {
                 <input
                   type="text"
                   name="description"
+                  defaultValue={description}
                   placeholder="Enter task description"
                   className="input input-bordered w-full "
                   required
@@ -121,4 +125,4 @@ const CreateTask = () => {
   );
 };
 
-export default CreateTask;
+export default UpdateTasks;

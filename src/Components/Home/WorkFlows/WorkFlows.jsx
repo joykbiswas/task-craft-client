@@ -38,7 +38,8 @@ const WorkFlows = () => {
         </h3>
       </div>
       {/* card section */}
-      <div className="">
+      <div className=""
+      data-aos="fade-up">
         <Carousel
           showDots={true}
           responsive={responsive}

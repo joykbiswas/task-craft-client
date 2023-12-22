@@ -37,6 +37,13 @@ const Dashboard = () => {
               Project & Task
             </NavLink>
           </li>
+         
+          {/* <li>
+            <NavLink to="/dashboard/kanbanboard">
+              <MdDynamicFeed />
+              KanbanBoard
+            </NavLink>
+          </li> */}
           <li>
             <NavLink to="/">
               <FaHome />

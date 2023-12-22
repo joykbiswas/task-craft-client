@@ -11,9 +11,10 @@ const Pricing = () => {
         <div className=" md:flex md:justify-between gap-5 space-y-4">
           {/* 1st card */}
 
-          <div className="w-full mt-4 max-w-sm p-4 bg-slate-600  border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+          <div className="w-full mt-4 max-w-sm p-4 bg-slate-600  border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700"
+          data-aos="fade-right">
             <h5 className="mb-4 text-xl font-medium  text-white dark:text-gray-400">
-              Regular
+            Team Flow
             </h5>
             <div className="flex items-baseline text-white dark:text-white">
               <span className="text-3xl font-semibold">$</span>
@@ -89,9 +90,10 @@ const Pricing = () => {
           </div>
 
           {/* 2nd card */}
-          <div className="w-full max-w-sm p-4 bg-[#5f99fc] border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+          <div className="w-full max-w-sm p-4 bg-[#5f99fc] border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700"
+          data-aos="fade-up">
             <h5 className="mb-4 text-xl font-medium text-white dark:text-gray-400">
-              Regular
+            TaskCraft Pro
             </h5>
             <div className="flex items-baseline text-white dark:text-white">
               <span className="text-3xl font-semibold">$</span>
@@ -166,9 +168,11 @@ const Pricing = () => {
           </div>
 
           {/* 3rd card */}
-          <div className="w-full max-w-sm p-4 bg-slate-600 border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+          <div className="w-full max-w-sm p-4 bg-slate-600 border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700"
+          data-aos="fade-left"
+          >
             <h5 className="mb-4 text-xl font-medium text-white dark:text-gray-400">
-              Regular
+            Pro Workshop
             </h5>
             <div className="flex items-baseline text-white dark:text-white">
               <span className="text-3xl font-semibold">$</span>

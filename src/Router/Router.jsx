@@ -10,6 +10,8 @@ import Project from "../Components/Dashboard/Project";
 import Pricing from "../Pages/Pricing/Pricing";
 import Blog from "../Pages/Blog/Blog";
 import PrivateRoute from "./PrivateRoute";
+import KanbanBoard from "../Components/Dashboard/DragDrop/Kanbanboard";
+import UpdateTasks from "../Components/Dashboard/UpdateTasks/UpdateTasks";
 
 const router = createBrowserRouter([
   {
@@ -54,7 +56,17 @@ const router = createBrowserRouter([
       {
         path: 'project',
         element:<Project></Project>
+      },
+      {
+        path: 'project/updateTasks/:id',
+        element:<UpdateTasks></UpdateTasks>,
+        loader:({params})=>fetch(`http://localhost:5000/tasks${params.id}`)
+      },
+      {
+        path: 'kanbanboard',
+        element:<KanbanBoard></KanbanBoard>
       }
+
     ]
   }
 ]);
