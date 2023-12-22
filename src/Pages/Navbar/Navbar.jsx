@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 import userDefaultPic from "../../assets/user.png";
 import { useContext } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
-
+import logo from "../../assets/TaskCraft_log.png"
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
 
@@ -114,8 +114,8 @@ const Navbar = () => {
               </div>
             </ul>
           </div>
-          <div className=" w-56  ">
-            <img src="https://i.ibb.co/Kw2yntK/market-logo.png" alt="" />
+          <div className=" w-56 ">
+            <img src={logo} alt="" />
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">

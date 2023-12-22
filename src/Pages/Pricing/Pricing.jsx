@@ -11,7 +11,7 @@ const Pricing = () => {
         <div className=" md:flex md:justify-between gap-5 space-y-4">
           {/* 1st card */}
 
-          <div className="w-full max-w-sm p-4 bg-slate-600  border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+          <div className="w-full mt-4 max-w-sm p-4 bg-slate-600  border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
             <h5 className="mb-4 text-xl font-medium  text-white dark:text-gray-400">
               Regular
             </h5>

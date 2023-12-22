@@ -9,6 +9,7 @@ import CreateTask from "../Components/Dashboard/CreateTask";
 import Project from "../Components/Dashboard/Project";
 import Pricing from "../Pages/Pricing/Pricing";
 import Blog from "../Pages/Blog/Blog";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -39,7 +40,7 @@ const router = createBrowserRouter([
   },
   {
     path: 'dashboard',
-    element:<Dashboard></Dashboard>,
+    element:<PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
     children:[
       {
         // index:true,
